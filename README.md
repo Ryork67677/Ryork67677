@@ -46,6 +46,14 @@ flowchart LR
 
 **Actively developing:** Python, Git/GitHub, APIs, SQL, testing, Linux, cloud services, data structures and algorithms, mathematics for machine learning, model evaluation, observability, and production software engineering.
 
+## Professional background
+
+- **Walgreens — Shift Lead (2024–present):** Supervise daily operations, coordinate staffing and priorities, uphold policy and safety standards, resolve customer and employee concerns, mentor new team members, and maintain operational documentation.
+- **AT&T Wireless — Corporate Trainer (2024):** Delivered training for employees and managers across multiple locations, created presentations and procedural documentation, maintained performance tracking, evaluated training effectiveness, and partnered with leadership on improvement opportunities.
+- **Framebridge — Trainer (2021–2023):** Led onboarding and coaching, maintained training resources and records, evaluated employee progress, and supported productivity and quality goals.
+
+These roles strengthened my ability to translate complex systems into usable processes, coach people through change, document repeatable operations, and manage real-world exceptions—skills I apply directly to human-in-the-loop AI systems.
+
 ## Current direction
 
 - Prepare to begin Western Governors University's [B.S. in AI Engineering](https://www.wgu.edu/online-it-degrees/ai-engineering.html)
