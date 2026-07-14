@@ -1,41 +1,66 @@
 # Russell York
 
-Aspiring AI engineer preparing to begin Western Governors University's [B.S. in AI Engineering](https://www.wgu.edu/online-it-degrees/ai-engineering.html).
+**Founder, [Nyxora AI](https://nyxora-ai.com/) | Aspiring AI Engineer | Preparing for WGU's B.S. in AI Engineering**
 
-I am building a practical foundation in Python, automation, and multi-agent systems while documenting my progress in public.
+I design practical, human-supervised AI automation systems around real business workflows. My current focus is strengthening my software, data, cloud, and machine-learning foundations while continuing to build and operate Nyxora AI.
 
-## Current focus
+## Featured project: Nyxora AI
 
-- Strengthening Python fundamentals through hands-on practice
-- Exploring automation tools and repeatable workflows
-- Learning how AI agents coordinate, use tools, and solve multi-step problems
-- Preparing for WGU's AI Engineering curriculum
+[Nyxora AI](https://nyxora-ai.com/) is a self-directed automation project for independent med spas and aesthetics clinics. It is designed to help clinics respond to leads faster, follow up consistently, reduce no-shows, request reviews, rebook clients, and reactivate inactive clients—with a real person kept in control.
 
-## Learning journey
+### What I contributed
 
-This profile is an honest record of work in progress. I am starting with small, understandable projects and will expand them as my skills grow.
+- Identified the business problem and mapped the customer lifecycle from missed call or new inquiry through booking, reminders, aftercare, reviews, rebooking, and win-back
+- Designed the system architecture, component boundaries, workflow states, approval queues, exception handling, and operator handoffs
+- Selected and operated a self-hosted automation stack using n8n, Docker, a reverse proxy, DNS/CDN services, operational data stores, and uptime monitoring
+- Integrated Claude into selected steps for qualification, drafting, summaries, demos, and operator assistance while retaining deterministic rules and human approval where appropriate
+- Built the product offer, website, demos, discovery process, reporting concepts, and a permission-based outreach approach
+- Directed AI-assisted implementation, tested outputs, corrected direction, and took responsibility for product and architecture decisions
 
-**Current milestone:** First Python program completed.
+### Sanitized system architecture
 
-**Next milestones:**
+```mermaid
+flowchart LR
+    A[Calls, forms, and messages] --> B[n8n workflow orchestration]
+    B --> C[Deterministic rules and state]
+    B --> D[Claude-assisted reasoning and drafting]
+    C --> E[Human approval and exception queue]
+    D --> E
+    E --> F[Booking, reminders, and follow-up]
+    F --> G[Operational data and reporting]
+    G --> H[Daily operator brief]
+```
 
-1. Build a useful Python automation script
-2. Add tests and clear documentation
-3. Work with APIs and structured data
-4. Create an early multi-agent experiment
-5. Develop portfolio projects alongside my degree
+### Workflow capabilities
 
-## Technologies I am learning
+- Missed-call response and speed-to-lead follow-up
+- Inquiry qualification and consultation booking
+- Appointment reminders and no-show reduction
+- Aftercare and review requests
+- Rebooking, retention, and client reactivation
+- Approval queues, reporting, and daily operator briefs
 
-`Python` · `Automation` · `AI Engineering` · `Multi-Agent Systems` · `Git` · `GitHub`
+## Technical experience
 
-## My approach
+**Hands-on exposure:** n8n, Claude, Notion, Docker, Caddy, Cloudflare, VPS hosting, Cal.com, Zoho Mail, workflow data tables, DNS, reverse proxying, and uptime monitoring.
 
-- Learn by building
-- Document the process clearly
-- Keep projects honest and reproducible
-- Improve one practical step at a time
+**Actively developing:** Python, Git/GitHub, APIs, SQL, testing, Linux, cloud services, data structures and algorithms, mathematics for machine learning, model evaluation, observability, and production software engineering.
+
+## Current direction
+
+- Prepare to begin Western Governors University's [B.S. in AI Engineering](https://www.wgu.edu/online-it-degrees/ai-engineering.html)
+- Build stronger Python and API-backed applications that I can explain end to end
+- Add logging, testing, evaluation, security, and reliability practices to Nyxora
+- Develop a focused portfolio of documented AI, data, and software-engineering projects
+
+## Professional strengths
+
+My background in operations, training, customer-facing leadership, and cross-team coordination gives me a systems mindset: I focus on reliability, handoffs, exceptions, user impact, and measurable outcomes—not just the demo.
+
+## Honest scope
+
+I am an early-career AI engineering candidate, not yet a professional software or ML engineer. I use AI tools as collaborators for research, explanation, code generation, and iteration. I define the problem, make product and architecture decisions, test the work, correct direction, and remain accountable for the system.
 
 ---
 
-Open to connecting with other learners and professionals working in AI engineering, automation, and agentic systems.
+**Explore Nyxora AI:** [nyxora-ai.com](https://nyxora-ai.com/)
