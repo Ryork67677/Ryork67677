@@ -1,74 +1,82 @@
 # Russell York
 
-**Founder, [Nyxora AI](https://nyxora-ai.com/) | Aspiring AI Engineer | Preparing for WGU's B.S. in AI Engineering**
+**Early-career AI engineering candidate | Founder, [Nyxora AI](https://nyxora-ai.com/) | Preparing for WGU's B.S. in AI Engineering**
 
-I design practical, human-supervised AI automation systems around real business workflows. My current focus is strengthening my software, data, cloud, and machine-learning foundations while continuing to build and operate Nyxora AI.
+I build practical, human-supervised AI systems that connect software engineering, data quality,
+model behavior, safety boundaries, and measurable outcomes. My strongest work is documented in the
+two end-to-end engineering projects below.
 
-## Featured project: Nyxora AI
+## Featured Engineering Projects
 
-[Nyxora AI](https://nyxora-ai.com/) is a self-directed automation project for independent med spas and aesthetics clinics. It is designed to help clinics respond to leads faster, follow up consistently, reduce no-shows, request reviews, rebook clients, and reactivate inactive clients—with a real person kept in control.
+### [Nyxora Outcome Intelligence](https://github.com/Ryork67677/nyxora-outcome-intelligence)
 
-### What I contributed
+[Repository](https://github.com/Ryork67677/nyxora-outcome-intelligence) | [Recorded dashboard](https://ryork67677.github.io/nyxora-outcome-intelligence/) | [CI](https://github.com/Ryork67677/nyxora-outcome-intelligence/actions/workflows/ci.yml)
 
-- Identified the business problem and mapped the customer lifecycle from missed call or new inquiry through booking, reminders, aftercare, reviews, rebooking, and win-back
-- Designed the system architecture, component boundaries, workflow states, approval queues, exception handling, and operator handoffs
-- Selected and operated a self-hosted automation stack using n8n, Docker, a reverse proxy, DNS/CDN services, operational data stores, and uptime monitoring
-- Integrated Claude into selected steps for qualification, drafting, summaries, demos, and operator assistance while retaining deterministic rules and human approval where appropriate
-- Built the product offer, website, demos, discovery process, reporting concepts, and a permission-based outreach approach
-- Directed AI-assisted implementation, tested outputs, corrected direction, and took responsibility for product and architecture decisions
+An end-to-end analytics and classical machine-learning system that converts reproducible synthetic
+lead events into a DuckDB warehouse, reviewed SQL marts, a booking-propensity model, drift and
+calibration monitoring, a guarded FastAPI scoring service, and an operational dashboard.
 
-### Sanitized system architecture
+- **Verified build:** 10,000 synthetic leads, 36,173 lifecycle events, and 9/9 data contracts passed
+- **Holdout evaluation:** ROC AUC 0.686 versus 0.500 naive; average precision 0.667 versus 0.481 naive
+- **Quality gates:** 13 automated tests, 96% measured core coverage, Docker smoke test, and GitHub Actions CI
+- **Engineering evidence:** chronological evaluation, probability calibration, monitoring, model cards, API validation, and explicit limitations
 
-```mermaid
-flowchart LR
-    A[Calls, forms, and messages] --> B[n8n workflow orchestration]
-    B --> C[Deterministic rules and state]
-    B --> D[Claude-assisted reasoning and drafting]
-    C --> E[Human approval and exception queue]
-    D --> E
-    E --> F[Booking, reminders, and follow-up]
-    F --> G[Operational data and reporting]
-    G --> H[Daily operator brief]
-```
+### [Nyxora Lead Concierge](https://github.com/Ryork67677/nyxora-lead-concierge)
 
-### Workflow capabilities
+[Repository](https://github.com/Ryork67677/nyxora-lead-concierge) | [Recorded behavior demo](https://ryork67677.github.io/nyxora-lead-concierge/) | [CI](https://github.com/Ryork67677/nyxora-lead-concierge/actions/workflows/ci.yml)
 
-- Missed-call response and speed-to-lead follow-up
-- Inquiry qualification and consultation booking
-- Appointment reminders and no-show reduction
-- Aftercare and review requests
-- Rebooking, retention, and client reactivation
-- Approval queues, reporting, and daily operator briefs
+A privacy-conscious lead qualification and human-handoff API. Deterministic policies handle urgent,
+clinical, unsupported, and prompt-injection cases before an optional local language model can rewrite
+verified facts. The model cannot override escalation or action routing.
 
-## Technical experience
+- **Verified build:** 24 automated tests and 94% code coverage
+- **Behavior evaluation:** 12/12 reviewed cases passed with 100% safety-case recall
+- **Local-model integration:** `qwen3:14b` through Ollama with a deterministic fallback
+- **Engineering evidence:** grounded retrieval, structured outputs, consent-gated storage, privacy minimization, evaluation, Docker, and CI
 
-**Hands-on exposure:** n8n, Claude, Notion, Docker, Caddy, Cloudflare, VPS hosting, Cal.com, Zoho Mail, workflow data tables, DNS, reverse proxying, and uptime monitoring.
+## What these projects demonstrate
 
-**Actively developing:** Python, Git/GitHub, APIs, SQL, testing, Linux, cloud services, data structures and algorithms, mathematics for machine learning, model evaluation, observability, and production software engineering.
+- Different model choices for different problems: classical ML for outcome ranking and a constrained local LLM for language generation
+- Reproducible data pipelines, reviewed SQL, API contracts, automated tests, behavior evaluations, and deployment artifacts
+- Human handoff, fail-closed safety behavior, monitoring, and honest communication of synthetic-data and validation limits
+- Ownership of problem framing, system boundaries, architecture decisions, validation criteria, and technical documentation
+
+## Additional system work: Nyxora AI
+
+[Nyxora AI](https://nyxora-ai.com/) is a broader automation project for independent med spas and
+aesthetics clinics. I mapped workflows from lead intake through booking, reminders, aftercare,
+reviews, rebooking, and reactivation; designed approval queues and exception handoffs; and operated
+a self-hosted stack involving n8n, Docker, Caddy, Cloudflare, DNS, operational data stores, and
+uptime monitoring. The two featured repositories above are the stronger code-first evidence behind
+that broader product direction.
+
+## Technical focus
+
+**Applied in public projects:** Python, FastAPI, SQL, DuckDB, scikit-learn, Ollama, pytest, Ruff,
+Docker, GitHub Actions, REST APIs, model evaluation, data contracts, monitoring, and technical documentation.
+
+**Actively developing:** cloud deployment, production observability, authentication and secrets
+management, larger evaluation sets, data structures and algorithms, and mathematics for machine learning.
 
 ## Professional background
 
-- **Walgreens — Shift Lead (2024–present):** Supervise daily operations, coordinate staffing and priorities, uphold policy and safety standards, resolve customer and employee concerns, mentor new team members, and maintain operational documentation.
-- **AT&T Wireless — Corporate Trainer (2024):** Delivered training for employees and managers across multiple locations, created presentations and procedural documentation, maintained performance tracking, evaluated training effectiveness, and partnered with leadership on improvement opportunities.
-- **Framebridge — Trainer (2021–2023):** Led onboarding and coaching, maintained training resources and records, evaluated employee progress, and supported productivity and quality goals.
+- **Walgreens - Shift Lead (2024-present):** Coordinate daily operations, staffing, safety, customer issues, training, and documentation.
+- **AT&T Wireless - Corporate Trainer (2024):** Delivered multi-location training, maintained performance tracking, and partnered with leadership on improvement plans.
+- **Framebridge - Trainer (2021-2023):** Led onboarding and coaching while supporting productivity, quality, and repeatable processes.
 
-These roles strengthened my ability to translate complex systems into usable processes, coach people through change, document repeatable operations, and manage real-world exceptions—skills I apply directly to human-in-the-loop AI systems.
+This background shapes how I engineer systems: I pay attention to handoffs, exceptions, documentation,
+user impact, and whether a workflow remains usable when conditions are imperfect.
 
 ## Current direction
 
-- Prepare to begin Western Governors University's [B.S. in AI Engineering](https://www.wgu.edu/online-it-degrees/ai-engineering.html)
-- Build stronger Python and API-backed applications that I can explain end to end
-- Add logging, testing, evaluation, security, and reliability practices to Nyxora
-- Develop a focused portfolio of documented AI, data, and software-engineering projects
-
-## Professional strengths
-
-My background in operations, training, customer-facing leadership, and cross-team coordination gives me a systems mindset: I focus on reliability, handoffs, exceptions, user impact, and measurable outcomes—not just the demo.
+- Prepare for Western Governors University's [B.S. in AI Engineering](https://www.wgu.edu/online-it-degrees/ai-engineering.html)
+- Deepen software, data, cloud, mathematics, and machine-learning foundations
+- Move selected portfolio systems from validated local builds toward observable, authenticated deployments
+- Maintain an evidence-based [AI Engineer Roadmap](https://github.com/Ryork67677/AI-Engineer-Roadmap)
 
 ## Honest scope
 
-I am an early-career AI engineering candidate, not yet a professional software or ML engineer. I use AI tools as collaborators for research, explanation, code generation, and iteration. I define the problem, make product and architecture decisions, test the work, correct direction, and remain accountable for the system.
-
----
-
-**Explore Nyxora AI:** [nyxora-ai.com](https://nyxora-ai.com/)
+I am an early-career candidate, not yet a professional software or ML engineer. These projects use
+synthetic data and do not claim production adoption, clinical validation, or real-world model impact.
+I use AI tools to accelerate research and implementation while remaining responsible for scope,
+architecture, testing, corrections, documentation, and every published claim.
